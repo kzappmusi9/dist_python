@@ -1,0 +1,26 @@
+[project]
+name = "dist-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "kzappmusi9", email = "kzappmusi9.swift@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "arviz>=1.3.0",
+    "ipykernel>=7.4.0",
+    "japanize-matplotlib>=1.1.3",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "pymc>=6.3.2",
+    "seaborn>=0.13.2",
+]
+
+[project.scripts]
+dist-python = "dist_python:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
